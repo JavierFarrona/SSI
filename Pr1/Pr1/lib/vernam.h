@@ -1,5 +1,5 @@
-#ifndef CIPHER_H
-#define CIPHER_H
+#ifndef VERNAM.H
+#define VERNAM.H
 
 #include <string>
 
@@ -11,4 +11,4 @@ std::string generateRandomKey(size_t length);
 std::string xorOperation(const std::string& binary1,
                          const std::string& binary2);
 
-#endif  // CIPHER_H
+#endif  // VERNAM.H
