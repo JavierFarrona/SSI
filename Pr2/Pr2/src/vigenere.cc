@@ -1,6 +1,6 @@
-#include "vigenere.h"
+#include "vigenere.h"  // Incluye el archivo de cabecera para las funciones de Vigenère
 
-#include <cctype>
+#include <cctype>  // Incluye funciones para manipulación de caracteres
 
 /**
  * @brief Preprocess the input text by converting all alphabetic characters to uppercase.
@@ -9,13 +9,13 @@
  * @return std::string The preprocessed text with only uppercase alphabetic characters.
  */
 std::string preprocessText(const std::string& text) {
-  std::string processed;
-  for (char c : text) {
-    if (std::isalpha(c)) {
-      processed += std::toupper(c);  // Convert to uppercase
+  std::string processed;  // Cadena para almacenar el texto procesado
+  for (char c : text) {  // Itera sobre cada carácter en el texto
+    if (std::isalpha(c)) {  // Verifica si el carácter es alfabético
+      processed += std::toupper(c);  // Convierte a mayúscula y añade a la cadena procesada
     }
   }
-  return processed;
+  return processed;  // Devuelve el texto procesado
 }
 
 /**
@@ -26,12 +26,12 @@ std::string preprocessText(const std::string& text) {
  * @return std::string The extended key.
  */
 std::string extendKey(const std::string& key, int textLength) {
-  std::string extendedKey;
-  int keyLength = key.length();
-  for (int i = 0; i < textLength; ++i) {
-    extendedKey += key[i % keyLength];  // Repeat the key as needed
+  std::string extendedKey;  // Cadena para almacenar la clave extendida
+  int keyLength = key.length();  // Longitud de la clave original
+  for (int i = 0; i < textLength; ++i) {  // Itera hasta que la longitud de la clave extendida coincida con la del texto
+    extendedKey += key[i % keyLength];  // Repite la clave según sea necesario
   }
-  return extendedKey;
+  return extendedKey;  // Devuelve la clave extendida
 }
 
 /**
@@ -42,14 +42,14 @@ std::string extendKey(const std::string& key, int textLength) {
  * @return std::string The encrypted ciphertext.
  */
 std::string encryptVigenere(const std::string& plaintext, const std::string& key) {
-  std::string ciphertext;
-  for (size_t i = 0; i < plaintext.length(); ++i) {
-    char p = plaintext[i];
-    char k = key[i];
-    char c = ((p - 'A') + (k - 'A')) % 26 + 'A';  // Encryption mod 26
-    ciphertext += c;
+  std::string ciphertext;  // Cadena para almacenar el texto cifrado
+  for (size_t i = 0; i < plaintext.length(); ++i) {  // Itera sobre cada carácter en el texto plano
+    char p = plaintext[i];  // Carácter del texto plano
+    char k = key[i];  // Carácter correspondiente de la clave
+    char c = ((p - 'A') + (k - 'A')) % 26 + 'A';  // Cifra el carácter usando la fórmula del cifrado Vigenère
+    ciphertext += c;  // Añade el carácter cifrado al texto cifrado
   }
-  return ciphertext;
+  return ciphertext;  // Devuelve el texto cifrado
 }
 
 /**
@@ -60,12 +60,12 @@ std::string encryptVigenere(const std::string& plaintext, const std::string& key
  * @return std::string The decrypted plaintext.
  */
 std::string decryptVigenere(const std::string& ciphertext, const std::string& key) {
-  std::string decryptedText;
-  for (size_t i = 0; i < ciphertext.length(); ++i) {
-    char c = ciphertext[i];
-    char k = key[i];
-    char p = ((c - 'A') - (k - 'A') + 26) % 26 + 'A';  // Decryption mod 26
-    decryptedText += p;
+  std::string decryptedText;  // Cadena para almacenar el texto descifrado
+  for (size_t i = 0; i < ciphertext.length(); ++i) {  // Itera sobre cada carácter en el texto cifrado
+    char c = ciphertext[i];  // Carácter del texto cifrado
+    char k = key[i];  // Carácter correspondiente de la clave
+    char p = ((c - 'A') - (k - 'A') + 26) % 26 + 'A';  // Descifra el carácter usando la fórmula del cifrado Vigenère
+    decryptedText += p;  // Añade el carácter descifrado al texto descifrado
   }
-  return decryptedText;
+  return decryptedText;  // Devuelve el texto descifrado
 }
