@@ -15,12 +15,12 @@ Este repositorio contiene el código y los recursos utilizados en las prácticas
 ## Prácticas
 
 ### Práctica 1: Introducción a la Criptografía
-- Descripción: Implementación de algoritmos básicos de criptografía.
-- Archivos: `src/practica1.cc`, `lib/crypto.h`
+- Descripción: Implementación del cifrado Vernam.
+- Archivos: `src/vernam.cc`, `lib/vernam.h`, `src/main.cc`
 
 ### Práctica 2: Cifrado de Bloques
-- Descripción: Implementación y análisis de cifrados de bloques como AES.
-- Archivos: `src/practica2.cc`, `lib/aes.h`
+- Descripción: Implementación del cifrado Vigenere.
+- Archivos: `src/vigenere.cc`, `lib/vigenere.h`, `src/main.cc`
 
 ### Práctica 3: Cifrado de Flujo
 - Descripción: Implementación del cifrado de flujo ChaCha20.
