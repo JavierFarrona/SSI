@@ -31,9 +31,4 @@ Este repositorio contiene el código y los recursos utilizados en las prácticas
 Para compilar y ejecutar el código, puedes usar el siguiente comando en la raíz del proyecto:
 
 ```sh
-make
-<<<<<<< HEAD
-./bin/main
-=======
-./bin/main
->>>>>>> refs/remotes/origin/main
+SSI/Pr*/Pr*/$: make
