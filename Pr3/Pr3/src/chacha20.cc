@@ -35,7 +35,8 @@ void chacha_block_20(uint32_t out[16], const uint32_t in[16]) {
   printState_20(x);
 }
 
-void xor_buffers(uint32_t* out, const uint32_t* in1, const uint32_t* in2, size_t length) {
+void xor_buffers(uint32_t* out, const uint32_t* in1, const uint32_t* in2,
+                 size_t length) {
   for (size_t i = 0; i < length; ++i) {
     out[i] = in1[i] ^ in2[i];
   }
