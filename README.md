@@ -32,4 +32,8 @@ Para compilar y ejecutar el código, puedes usar el siguiente comando en la raí
 
 ```sh
 make
+<<<<<<< HEAD
 ./bin/main
+=======
+./bin/main
+>>>>>>> refs/remotes/origin/main
