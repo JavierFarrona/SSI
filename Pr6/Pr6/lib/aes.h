@@ -7,6 +7,7 @@
 
 // AES class definition
 class AES {
+  private:
   // Private member variables
   std::vector<int> S_Caja;  // Substitution box (S-Box) used in AES encryption
   std::vector<std::vector<int>> Rcon;  // Round constants used in key expansion

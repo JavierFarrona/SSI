@@ -48,11 +48,11 @@ AES::AES() {
 void AES::introducir_datos(std::vector<std::vector<int>> clave,
                            std::vector<std::vector<int>> entrada) {
   clave_original = clave;  // Store the original key
-  for (int i = 0; i < 4; i++)
-    for (int j = 0; j < 4; j++)
-      clave_extendida[i][j] =
-          clave[i][j];  // Copy the original key into the expanded key matrix
-
+  for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < 4; j++) {
+      clave_extendida[i][j] = clave[i][j];  // Copy the original key into the expanded key matrix
+    }
+  }
   mensaje = entrada;  // Store the input message
 }
 
@@ -95,8 +95,7 @@ void AES::expandir_clave() {
 
 // Method to add the round key to the state matrix
 void AES::addRoundKey(int iteracion) {
-  int j_iteracion =
-      4 * iteracion;  // Calculate the starting column for the round key
+  int j_iteracion = 4 * iteracion;  // Calculate the starting column for the round key
 
   if (iteracion == 0)  // Initial round key addition
   {
@@ -125,8 +124,7 @@ void AES::addRoundKey(int iteracion) {
 void AES::SubBytes() {
   for (int i = 0; i < 4; i++)
     for (int j = 0; j < 4; j++)
-      resultado[i][j] =
-          S_Caja[resultado[i][j]];  // Substitute each byte using the S-Box
+      resultado[i][j] = S_Caja[resultado[i][j]];  // Substitute each byte using the S-Box
 }
 
 // Method to perform the ShiftRows transformation

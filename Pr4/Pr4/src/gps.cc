@@ -1,11 +1,8 @@
 #include "../lib/gps.h"
 
-#include <iostream>
-#include <vector>
-
-std::pair<int, int> calcular_taps(int prn) {
-    int tap1 = (prn % 8) + 1;
-    int tap2 = ((prn + 5) % 10) + 1;
+std::pair<int, int> calcular_taps(int id) {
+    int tap1 = (id % 8) + 1;
+    int tap2 = ((id + 5) % 10) + 1;
     return {tap1, tap2};
 }
 
