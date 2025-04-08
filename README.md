@@ -1,10 +1,16 @@
 # 🧪 Práctica RSA
 **Asignatura:** SSI
+
 **Grado:** Nombre del grado o carrera
+
 **Curso:** 24/25
+
 **Cuatrimestre:** Segundo
+
 **Autor:** Javier Farrona Cabrera
+
 **Fecha de entrega:** 7/8/2025
+
 
 ---
 ## 📄 Descripción
