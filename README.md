@@ -20,10 +20,10 @@ Breve descripción de la práctica y sus objetivos.
 
 ---
 ## ⚙️ Compilación y ejecución
-\`\`\`bash
+```bash
 make       # Compila el proyecto
 ./si       # Ejecuta el binario generado
-\`\`\`
+```
 
 ---
 ## 🔍 Detalles técnicos
