@@ -1,4 +1,5 @@
 #include <iostream>
+#include "../lib/diffie.h"
 
 int pow (int base, int exponente, const int mod) {
   int resultado = 1;
@@ -48,12 +49,4 @@ void diffie_hellman(int mod, int base, int x_a, int x_b)
     std::cout << "------------------B------------------\n";
     std::cout << "Entonces K vale " << pow(y_a, x_b, mod);
     std::cout << "\n-------------------------------------\n";
-}
-
-int main() {
-    diffie_hellman(13, 4, 5, 2);
-    diffie_hellman(43, 23, 25, 33);
-    diffie_hellman(113, 43, 54, 71);
-
-    return 0;
 }
