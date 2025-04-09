@@ -1,16 +1,9 @@
-# 🧪 Práctica RSA
+# 🧪 Práctica Hola
 **Asignatura:** SSI
-
 **Grado:** Nombre del grado o carrera
-
-**Curso:** 24/25
-
+**Curso:** Tercero
 **Cuatrimestre:** Segundo
-
-**Autor:** Javier Farrona Cabrera
-
-**Fecha de entrega:** 7/8/2025
-
+**Autor:** Javiernbhfvmrxdd
 
 ---
 ## 📄 Descripción
