@@ -1,15 +1,13 @@
-# 🧪 Práctica RSA
+# 🧪 Práctica Vernam
 **Asignatura:** SSI
 
-**Grado:** Nombre del grado o carrera
+**Grado:** Ingeniería Informática
 
 **Curso:** 24/25
 
 **Cuatrimestre:** Segundo
 
 **Autor:** Javier Farrona Cabrera
-
-**Fecha de entrega:** 7/8/2025
 
 
 ---
