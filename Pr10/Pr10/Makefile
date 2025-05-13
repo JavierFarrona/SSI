@@ -3,7 +3,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -g -Ilib
 LDFLAGS =
-TARGET = si
+TARGET = elipticas
 
 # Carpetas
 SRC_DIR = src
@@ -72,10 +72,15 @@ git:
 # Crear un archivo README.md con detalles de la práctica
 readme:
 	@read -p "Nombre de la práctica: " practica; \
+
 	read -p "Asignatura: " asignatura; \
+
 	read -p "Curso: " curso; \
+
 	read -p "Cuatrimestre: " cuatri; \
+
 	read -p "Autor: " autor; \
+
 	echo "# 🧪 Práctica $$practica" > README.md; \
 	echo "**Asignatura:** $$asignatura" >> README.md; \
 	echo "**Grado:** Nombre del grado o carrera" >> README.md; \
